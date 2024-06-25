@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .info {
+        margin-top: -2%;
+      }
+      #contact {
+        text-decoration: none;
+        color: rgb(36, 32, 30);
+        transition: 0.4s ease;
+      }
+      #contact:hover {
+        color: blue;
+        text-shadow: 0px 0vh 10px blue;
+      }
+      .image:hover .girl {
+        border-color: rgb(230, 104, 59);
+        outline: var(--b) solid var(--c);
+        outline-offset: var(--gs);
+        box-shadow: 0 0 50px 5px blue;
+        transition: 0.4s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <img src="/Resources/logo.png" class="logo" />
+
+        <ul>
+          <li><a class="nav__link" href="./index.html">HOME</a></li>
+          <li><a class="nav__link" href="./about.html">ABOUT</a></li>
+          <li><a class="nav__link" href="./skills.html">SKILLS</a></li>
+          <li><a class="nav__link" href="./myWorks.html">MY WORKS</a></li>
+          <li><a class="nav__link" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <h3>Hi, I'm <span>Manikanth</span>.</h3>
+        <h1 style="margin-top: -1%"><span>C</span>ontact <span>M</span>e</h1>
+        <h3 style="margin-top: -4%">
+          Feel free to reach out to me through any of the following platforms:
+        </h3>
+        <form style="font-weight: bold">
+          <table>
+            <tr>
+              <td><span>Email:</span></td>
+              <td>
+                <a href="mailto:mainkanth11800@gmail.com" id="contact"
+                  >Manikanth11800@gmail.com</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span>Phone :</span></td>
+              <td>
+                <a href="tel:+91 9398502657" id="contact">+91 9398502657</a>
+              </td>
+            </tr>
+            <tr>
+              <td><span>LinkedIn :</span></td>
+              <td>
+                <a
+                  href="https://www.linkedin.com/in/manikanth-reddy-26a60917b/"
+                  id="contact"
+                  target="_blank"
+                  >Manikanth Reddy</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><span>Whatsapp :</span></td>
+              <td>
+                <a
+                  id="contact"
+                  href="https://wa.me/+919398502657?text=Hi"
+                  target="_blank"
+                  >9398502657</a
+                >
+              </td>
+            </tr>
+          </table>
+        </form>
+        <br />
+        <h2><span>S</span>ocial <span>M</span>edia :</h2>
+        <div class="image">
+          <a href="mailto:manikanth11800@gmail.com" target="_blank"
+            ><img
+              class="girl"
+              src="/Resources/contact.jpg"
+              style="
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+              "
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="icons">
+        <br />
+        <a
+          href="https://www.facebook.com/profile.php?id=100005562527065"
+          target="_blank"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+        <a
+          href="https://www.instagram.com/m_a_n_i_k_a_n_t_h_reddy/"
+          target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://x.com/M_anikanth" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://github.com/Manikanth-Reddy" target="_blank">
+          <ion-icon name="logo-Github"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>

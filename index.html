@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .info {
+        margin-top: -3%;
+      }
+      .image img {
+        border-radius: 50%;
+        transition: 0.5s ease;
+      }
+      .image:hover .girl {
+        border-color: rgb(230, 104, 59);
+        outline: var(--b) solid var(--c);
+        outline-offset: var(--gs);
+        box-shadow: 0 0 50px 5px rgb(230, 104, 59);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <img src="/Resources/logo.png" class="logo" />
+
+        <ul>
+          <li>
+            <a class="nav__link" href="./index.html">HOME</a>
+          </li>
+          <li><a class="nav__link" href="./about.html">ABOUT</a></li>
+          <li><a class="nav__link" href="./skills.html">SKILLS</a></li>
+          <li><a class="nav__link" href="./myWorks.html">MY WORKS</a></li>
+          <li><a class="nav__link" href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <h3>Hi, I'm <span>Manikanth Reddy</span>.</h3>
+        <h1 id="position"><span>J</span>AVA <span>D</span>EVELOPER</h1>
+        <h3>
+          Motivated B.Tech graduate with expertise in Java development,
+          <br />web technologies, and Spring frameworks. Skilled in REST APIs
+          <br />
+          and database operations. Eager to contribute to dynamic organizations.
+        </h3>
+        <a class="hire" href="mailto:Manikanth11800@gmail.com ">Hire Me</a>
+      </div>
+
+      <div class="image">
+        <img src="/Resources/IMG-20220909-WA0000.jpg" class="girl" />
+      </div>
+
+      <div class="icons">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a
+          href="https://www.instagram.com/m_a_n_i_k_a_n_t_h_reddy/"
+          target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+        <a href="https://x.com/M_anikanth" target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></a>
+        <a href="https://github.com/Manikanth-Reddy" target="_blank">
+          <ion-icon name="logo-Github"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  </body>
+</html>
