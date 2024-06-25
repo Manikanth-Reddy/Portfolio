@@ -1,5 +1,4 @@
 body {
-  margin-top: 5%;
   margin-right: 3%;
   margin-left: 0%;
 }
@@ -8,6 +7,17 @@ p {
   font-size: large;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.image img {
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+.image:hover .my {
+  border-color: rgb(230, 104, 59);
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--gs);
+  box-shadow: 0 0 50px 5px rgb(230, 104, 59);
 }
 .main {
   width: 100%;
@@ -96,23 +106,6 @@ ul li a:hover {
   color: rgb(36, 32, 30);
 }
 
-.image {
-  width: 30%;
-  height: 60%;
-  position: absolute;
-  right: 100px;
-  bottom: 0;
-}
-
-.image img {
-  position: absolute;
-  height: 100%;
-  left: 70%;
-  transform: translate(-55%);
-  bottom: 75px;
-  transition: left 2s ease;
-}
-
 .icons a {
   text-decoration: none;
   color: #000;
@@ -129,11 +122,84 @@ ul li a:hover {
 .icons ion-icon:hover {
   color: rgb(59, 174, 209);
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.image img {
+  max-width: 65vh;
+  position: absolute;
+  left: 70%;
+  bottom: 0%;
 }
-.sticky + .content {
-  padding-top: 60px;
+#image img {
+  max-width: 65vh;
+  position: absolute;
+  left: 70%;
+  bottom: 10%;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    margin: 1%;
+    padding: 0%;
+  }
+  .image img {
+    width: 30%;
+    bottom: 80%;
+    border-radius: 15%;
+    left: 60%;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar ul li {
+    width: 100%;
+    text-align: left;
+  }
+  .info h1 {
+    font-size: 2em;
+  }
+  .info h3 {
+    font-size: 16px;
+  }
+  .icons a {
+    padding: 8%;
+  }
+  .navbar img {
+    position: relative;
+    max-width: 20%;
+    left: 0%;
+    display: none;
+  }
+  #image img {
+    display: none;
+  }
+}
+@media (min-width: 450px) and (max-width: 770px) {
+  .image img {
+    width: 20%;
+    bottom: 55%;
+    border-radius: 15%;
+    left: 60%;
+  }
+  #image img {
+    display: none;
+  }
+  .icons a {
+    padding: 8%;
+  }
+}
+@media (min-width: 770px) and (max-width: 1024px) {
+  .image img {
+    width: 25%;
+    bottom: 30%;
+    border-radius: 50%;
+    left: 75%;
+  }
+  .icons a {
+    padding: 8%;
+  }
+  #image img {
+    display: none;
+  }
 }
